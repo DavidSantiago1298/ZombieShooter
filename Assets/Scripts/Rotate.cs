@@ -3,16 +3,30 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     [SerializeField]
-    private float _rotateSpeed = 5;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    private float _rotateSpeed = 5;
+
+    [SerializeField]
+    
+    private bool _isRotating = true;
+    
+    public bool IsRotating
+    {
+        get {return _isRotating;}
+        set {_isRotating = value;}
+    } 
+
     void Update()
     {
-        gameObject.transform.Rotate(0F, _rotateSpeed * Time.deltaTime, 0F);
+        RotateWeapon();
     }
+
+    private void RotateWeapon()
+    {
+        if (_isRotating)
+        {
+            gameObject.transform.Rotate(0F, _rotateSpeed * Time.deltaTime, 0F);
+        }
+    }
+    
 }

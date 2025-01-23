@@ -490,6 +490,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4001548927147651877, guid: 7ebb283e7d571eb4783118af3d915735, type: 3}
+      propertyPath: _isRotating
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 765299734143684715, guid: 7ebb283e7d571eb4783118af3d915735, type: 3}
       propertyPath: m_Name
       value: Gun

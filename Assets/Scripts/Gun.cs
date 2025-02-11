@@ -28,6 +28,7 @@ private GetWeapon _getWeapon;
             }
             return;
         }
+        SoundManager.instance.Play("Shoot");
 
         _weaponAnimator.Play("Shoot", -1, 0f);
         Instantiate(_bullet, _bulletPivot.position, _bulletPivot.rotation);  
@@ -46,6 +47,7 @@ private GetWeapon _getWeapon;
         _getWeapon = getWeapon;
         _totalBulletNumber =_maxBulletNumber;
         Reload();
+        
         _weaponAnimator.Play("GetWeapon");
         UpdateBulletText();  
     }
@@ -65,6 +67,7 @@ private GetWeapon _getWeapon;
         {
             _currentBulletNumber = _totalBulletNumber;
         }
+        SoundManager.instance.Play("Reload");
         _totalBulletNumber -= _currentBulletNumber;
         UpdateBulletText();
         _weaponAnimator.Play("Reload");

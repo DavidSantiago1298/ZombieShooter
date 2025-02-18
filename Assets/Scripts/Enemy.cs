@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
         {
             health.TakeDamage(1);
             Destroy(collison.gameObject);
+            SoundManager.instance.Play("Damage");
         }    
         
     }
@@ -41,5 +42,6 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        SoundManager.instance.Play("Mdeath");
     }
 }

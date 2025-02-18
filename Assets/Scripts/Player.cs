@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     {
         health = GetComponent<Health>();
         uicontroller = GetComponent<UIcontroller>();
+        SoundManager.instance.Play("Adventure");
     }
     private void OnCollisionEnter (Collision collision)
     {

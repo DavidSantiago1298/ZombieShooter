@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: feebb8aea8251a74fa384948726f23ac
+timeCreated: 1521282861
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114355
+  packageName: Sci-fi ShortGun
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Gun/Material/Shader/Baked_Pattern2.mat
+  uploadId: 235906
